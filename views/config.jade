@@ -1,0 +1,15 @@
+extends layout
+
+block content
+    .container
+        .row
+            .col-xs-12
+                each val, file in config
+                    h1= file
+                    form(method="post", action="/config/"+app+"/"+file)
+                        each group, groupname in val
+                            each item, key in group
+                                label=key
+                                input.form-control(placeholder=key,name=groupname+"["+key+"]",value=item)
+                        input.btn.btn-primary(type="submit", value="Submit")
+
