@@ -1,0 +1,20 @@
+extends layout
+
+block content
+  .container-fluid.full-height
+    .row.fill
+        .item.col-md-4.editors
+            .panel.panel-default
+                .panel-body
+                    textarea#html
+                        | <h1>HI</h1>
+            .panel.panel-default
+                .panel-body
+                    textarea#css
+                        | h1 { color: blue; }
+            .panel.panel-default
+                .panel-body
+                    textarea#js
+                        | var j = 0;
+        .item.col-md-8
+            iframe#output

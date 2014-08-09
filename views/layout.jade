@@ -1,0 +1,20 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='UTF-8')
+    meta(name='viewport', content='width=device-width')
+    title= title
+    block css
+      link(rel='stylesheet', href='/components/bootstrap/dist/css/bootstrap.css')
+      link(rel='stylesheet', href='/css/style.css')
+      link(rel='stylesheet', href='/components/codemirror/lib/codemirror.css')
+    block js
+      script(src='http://localhost:35729/livereload.js')
+      script(src='/components/codemirror/lib/codemirror.js')
+      script(src='/components/codemirror/mode/xml/xml.js')
+      script(src='/components/codemirror/mode/javascript/javascript.js')
+      script(src='/components/codemirror/mode/css/css.js')
+      script(src='/components/jquery/dist/jquery.js')
+      script(src='/js/main.js')
+  body
+    block content

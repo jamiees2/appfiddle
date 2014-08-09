@@ -1,0 +1,13 @@
+{
+  "name": "jsfiddle",
+  "version": "0.0.1",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "components"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.2.0",
+    "codemirror": "~4.4.0"
+  }
+}
