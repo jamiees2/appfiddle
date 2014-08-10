@@ -4,7 +4,13 @@ block content
     .container
         .row
             .col-xs-12
-                each item in apps
-                    a(href="/config/"+item)= item
+                table.table
+                    tr
+                        each item in apps
+                            td=item
+                            td
+                                a(href="/config/"+item) Config
+                            td
+                                a(href="/edit/"+item) Edit
         a(href="create/blabla") Create App
 

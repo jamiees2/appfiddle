@@ -1,0 +1,12 @@
+extends layout
+
+block content
+    .container
+        .row
+            .col-xs-12
+                textarea#editor(data-mime=mime)=data
+block js
+    script(src='/components/codemirror/lib/codemirror.js')
+    script(src='/components/codemirror/addon/mode/loadmode.js')
+    script(src='/components/jquery/dist/jquery.js')
+    script(src='/js/editor.js')
